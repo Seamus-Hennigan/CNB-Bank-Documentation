@@ -1,0 +1,84 @@
+site_name: 'CNB-Bank Documentation'
+site_description: 'Homelab, cloud infrastructure, and a distributed caching system powering a trading service.'
+site_author: 'Your Name'
+# site_url: https://seamushennigan.com
+# repo_url: https://github.com/your-user/your-repo
+
+theme:
+  name: custommill
+  # custommill-specific options:
+  main_color: "#bb0000"        # primary accent color
+  gray: "#d0d0d0"
+  lighter_gray: "#eeeeee"
+  date_time_format: "%Y-%m-%d %H:%M:%S %Z"
+  toc_depth: 2
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: '#'
+
+plugins:
+  - search
+
+extra:
+  history_buttons: false
+  # Optional nav bar links (edit or remove):
+  # nav_links:
+  #   - icon: github
+  #     icon_type: brand
+  #     text: Source
+  #     url: https://github.com/your-user/your-repo
+
+nav:
+  - Home: index.md
+  - About the Project: about.md
+
+  # ── CLOUD ──────────────────────────────
+  - Cloud:
+      - Overview: cloud/index.md
+      - AWS:
+          - Overview: cloud/aws/overview.md
+          - Architecture: cloud/aws/architecture.md
+          - Runbooks: cloud/aws/runbooks.md
+      - Cloudflare:
+          - Overview: cloud/cloudflare/overview.md
+          - Architecture: cloud/cloudflare/architecture.md
+          - Website Hosting: cloud/cloudflare/website-hosting.md
+          - Tunnels: cloud/cloudflare/tunnels.md
+          - Runbooks: cloud/cloudflare/runbooks.md
+
+  # ── SELF-HOSTED ────────────────────────
+  - Self-Hosted:
+      - Overview: self-hosted/index.md
+      - Raspberry Pis:
+          - Overview: self-hosted/raspberry-pis/overview.md
+          - Setup & Config: self-hosted/raspberry-pis/setup.md
+      - Database:
+          - Overview: self-hosted/database/overview.md
+          - Schema & Config: self-hosted/database/schema.md
+      - Kubernetes:
+          - Overview: self-hosted/kubernetes/overview.md
+          - Architecture: self-hosted/kubernetes/architecture.md
+          - Runbooks: self-hosted/kubernetes/runbooks.md
+
+  # ── DISTRIBUTED CACHING SYSTEM ─────────
+  - Distributed Caching System:
+      - Overview: caching/index.md
+      - Architecture: caching/architecture.md
+      - Website Caching Workers:
+          - Overview: caching/website-workers/overview.md
+          - Architecture: caching/website-workers/architecture.md
+          - Runbooks: caching/website-workers/runbooks.md
+      - Edge Database Systems:
+          - Overview: caching/edge-database/overview.md
+          - Architecture: caching/edge-database/architecture.md
+          - Runbooks: caching/edge-database/runbooks.md
+      - Cache Invalidation & Consistency:
+          - Overview: caching/invalidation/overview.md
+          - Architecture: caching/invalidation/architecture.md
+          - Runbooks: caching/invalidation/runbooks.md
+      - Trading Service Integration:
+          - Overview: caching/trading-integration/overview.md
+          - Architecture: caching/trading-integration/architecture.md
+          - Runbooks: caching/trading-integration/runbooks.md
