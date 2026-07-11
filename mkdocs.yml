@@ -1,8 +1,8 @@
 site_name: 'CNB-Bank Documentation'
 site_description: 'Homelab, cloud infrastructure, and a distributed caching system powering a trading service.'
 site_author: 'Your Name'
-# site_url: https://seamushennigan.com
-# repo_url: https://github.com/your-user/your-repo
+site_url: https://seamushennigan.com
+repo_url: https://github.com/Seamus-Hennigan/CNB-Bank
 
 theme:
   name: custommill
@@ -23,12 +23,9 @@ plugins:
 
 extra:
   history_buttons: false
-  # Optional nav bar links (edit or remove):
-  # nav_links:
-  #   - icon: github
-  #     icon_type: brand
-  #     text: Source
-  #     url: https://github.com/your-user/your-repo
+  nav_links:
+    - text: Portfolio
+      url: https://seamushennigan.com
 
 nav:
   - Home: index.md
