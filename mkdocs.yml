@@ -1,7 +1,7 @@
 site_name: 'CNB-Bank Documentation'
 site_description: 'Homelab, cloud infrastructure, and a distributed caching system powering a banking/trading service.'
 site_author: 'Your Name'
-site_url: https://seamushennigan.com
+site_url: https://docs.cnb-bank.org
 repo_url: https://github.com/Seamus-Hennigan/CNB-Bank
 
 theme:
@@ -17,9 +17,18 @@ markdown_extensions:
   - admonition
   - toc:
       permalink: '#'
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 plugins:
   - search
+
+extra_javascript:
+  - js/mermaid-init.js
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
 
 extra:
   history_buttons: false
@@ -49,7 +58,7 @@ nav:
   - Self-Hosted:
       - Overview: self-hosted/index.md
       - Raspberry Pis:
-          - Overview: self-hosted/raspberry-pis/overview.md
+          - Overview: self-hosted/raspberry-pis/diagram.md
           - Setup & Config: self-hosted/raspberry-pis/setup.md
       - Database:
           - Overview: self-hosted/database/overview.md
