@@ -54,12 +54,13 @@ nav:
           - Tunnels: cloud/cloudflare/tunnels.md
           - Runbooks: cloud/cloudflare/runbooks.md
 
-  # ── SELF-HOSTED ────────────────────────
-  - Self-Hosted:
-      - Overview: self-hosted/index.md
+  # ── HOMELAB SETUP ──────────────────────
+  - Homelab Setup:
+      - Overview: self-hosted/homelab-setup.md
+      - Gear & Photos: self-hosted/homelab-gear.md
       - Raspberry Pis:
-          - Overview: self-hosted/raspberry-pis/diagram.md
-          - Setup & Config: self-hosted/raspberry-pis/setup.md
+          - Overview: self-hosted/raspberry-pis/overview.md
+          - Diagram's: self-hosted/raspberry-pis/diagram.md
       - Database:
           - Overview: self-hosted/database/overview.md
           - Schema & Config: self-hosted/database/schema.md
@@ -67,6 +68,8 @@ nav:
           - Overview: self-hosted/kubernetes/overview.md
           - Architecture: self-hosted/kubernetes/architecture.md
           - Runbooks: self-hosted/kubernetes/runbooks.md
+      - Networking:
+          - Overview: self-hosted/networking/overview.md
 
   # ── DISTRIBUTED CACHING SYSTEM ─────────
   - Distributed Caching System:
