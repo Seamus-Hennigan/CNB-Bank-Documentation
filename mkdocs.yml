@@ -37,7 +37,7 @@ extra:
       url: https://seamushennigan.com
 
 nav:
-  - Home: index.md
+  - Home: home.md
   - About the Project: about.md
 
   # ── CLOUD ──────────────────────────────
